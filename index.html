@@ -17,13 +17,19 @@ html {
 body {
   margin: 0;
   font-family: 'STIX Two Math', serif;
-  color: white;
+  color: #1a1a1a;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+  background: linear-gradient(-45deg, 
+    #fbc2eb, 
+    #a6c1ee, 
+    #fddb92, 
+    #c2e9fb
+  );
   background-size: 400% 400%;
-  animation: gradientMove 12s ease infinite;
+  animation: gradientMove 15s ease infinite;
 }
 
+  
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -37,7 +43,7 @@ nav {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
-  background: rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.4);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -98,7 +104,7 @@ section {
 }
 
 .card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.6);  
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(15px);
