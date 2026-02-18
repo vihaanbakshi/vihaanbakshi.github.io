@@ -3,85 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Artificial Intelligence | By Vihaan Bakshi</title>
+<title>On Artificial Intelligence | By Vihaan Bakshi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
 
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #666666;
-  --accent: #0a84ff;
-}
-
-body.dark {
-  --bg: #0d1117;
-  --text: #f5f5f5;
-  --muted: #9ca3af;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
   font-family: 'Inter', sans-serif;
-  transition: 0.3s ease;
+  color: var(--text);
+  background: linear-gradient(-45deg, #0f172a, #111827, #1e1b4b, #0f172a);
+  background-size: 400% 400%;
+  animation: gradient 18s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 /* NAV */
 nav {
   position: fixed;
-  top: 0;
   width: 100%;
-  background: var(--bg);
-  padding: 20px 50px;
+  padding: 20px 60px;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.3);
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
-  z-index: 1000;
-}
-
-nav .logo {
-  font-weight: 600;
 }
 
 nav span {
-  cursor: pointer;
+  color: var(--muted);
 }
 
 /* HERO */
 .hero {
-  margin-top: 120px;
   text-align: center;
-  padding: 80px 20px 40px;
+  padding: 180px 20px 100px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  max-width: 850px;
+  font-size: 60px;
+  max-width: 900px;
   margin: auto;
+  line-height: 1.15;
 }
 
 .hero p {
-  margin-top: 20px;
+  margin-top: 25px;
+  font-size: 18px;
   color: var(--muted);
 }
 
 /* ARTICLE */
 .container {
-  max-width: 750px;
-  margin: 60px auto;
-  padding: 0 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px 120px;
 }
 
 .section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   opacity: 0;
-  transform: translateY(25px);
-  transition: 0.7s ease;
+  transform: translateY(40px);
+  transition: 0.8s ease;
 }
 
 .section.show {
@@ -91,37 +85,36 @@ nav span {
 
 .section h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 34px;
+  margin-bottom: 20px;
 }
 
 .section p {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.9;
   color: var(--muted);
 }
 
-/* PULL QUOTE */
+/* QUOTE */
 .quote {
   font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  margin: 80px 0;
-  padding-left: 20px;
-  border-left: 4px solid var(--accent);
+  font-size: 28px;
+  margin: 100px 0;
+  padding-left: 25px;
+  border-left: 3px solid white;
 }
 
-/* AUTHOR */
-.author {
+/* SIGNATURE */
+.signature {
   margin-top: 100px;
-  padding-top: 40px;
-  border-top: 1px solid #ddd;
+  font-size: 18px;
+  color: var(--muted);
 }
 
-.author h3 {
-  margin-bottom: 5px;
+.signature strong {
+  color: white;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 60px;
@@ -134,82 +127,73 @@ footer {
 <body>
 
 <nav>
-  <div class="logo">AI Perspectives</div>
-  <span onclick="toggleDark()">🌙</span>
+  <div><strong>Vihaan</strong></div>
+  <span>February 2026</span>
 </nav>
 
 <div class="hero">
-  <h1>Artificial Intelligence Is Becoming the Most Powerful Tool of Our Generation</h1>
-  <p>By Vihaan • February 2026</p>
+  <h1>Artificial Intelligence Is the Most Powerful Leverage Tool of Our Time</h1>
+  <p>A personal perspective on why mastering AI is no longer optional.</p>
 </div>
 
 <div class="container">
 
   <div class="section">
-    <h2>The Expansion of Human Capability</h2>
+    <h2>Amplifying Human Potential</h2>
     <p>
-      Artificial Intelligence represents more than technological progress — it represents amplification.
-      It enhances human productivity, accelerates research, and reduces the friction between ideas and execution.
+      Artificial Intelligence is not a replacement for human intelligence.
+      It is an amplifier. It shortens the distance between curiosity and clarity,
+      between ideas and execution. What once required teams can now be initiated
+      by individuals who understand how to leverage intelligent systems effectively.
     </p>
   </div>
 
   <div class="section">
-    <h2>A New Learning Infrastructure</h2>
+    <h2>Learning at an Accelerated Rate</h2>
     <p>
-      AI tools function as on-demand tutors, collaborators, and strategic assistants.
-      Students can explore complex topics with clarity. Builders can prototype rapidly.
-      Knowledge is no longer limited by access — it is limited by curiosity.
+      AI enables real-time explanation, iteration, and feedback.
+      Instead of waiting for answers, we can explore ideas instantly.
+      This changes the structure of learning itself.
+      The ceiling is no longer access — it is ambition.
     </p>
   </div>
 
   <div class="quote">
-    The true advantage in the modern era is not intelligence alone —
-    it is the ability to collaborate with intelligent systems.
+    Intelligence alone is no longer the advantage.
+    The advantage is knowing how to multiply it.
   </div>
 
   <div class="section">
-    <h2>Entrepreneurial Leverage</h2>
+    <h2>Opportunity for Builders</h2>
     <p>
-      AI lowers the barriers to innovation. Tasks that once required teams can now be executed
-      by individuals equipped with the right tools. This shift redefines what is possible
-      for students, creators, and founders alike.
+      Students, creators, and entrepreneurs now operate in an environment
+      where execution speed determines opportunity.
+      AI tools allow for prototyping, writing, coding, and analysis
+      at unprecedented speed.
     </p>
   </div>
 
   <div class="section">
-    <h2>Responsible Integration</h2>
+    <h2>Responsibility</h2>
     <p>
-      As with all transformative technologies, the responsibility lies in thoughtful application.
-      Ethical reasoning, critical evaluation, and strategic adoption determine AI’s long-term impact.
-      The future belongs not to those who ignore AI — but to those who master it responsibly.
+      Mastery of AI requires discipline.
+      The tool is powerful, but direction must come from human judgment.
+      Used thoughtfully, it becomes the greatest multiplier of the modern era.
     </p>
   </div>
 
-  <div class="author">
-    <h3>About the Author</h3>
-    <p>
-      Vihaan is a student exploring the intersection of artificial intelligence,
-      innovation, and long-term human development.
-    </p>
+  <div class="signature">
+    — <strong>Vihaan Bakshi</strong><br>
+    Student. Builder. Curious thinker.
   </div>
 
 </div>
 
 <footer>
-  © 2026 Vihaan Bakshi. All rights reserved.
+  © 2026
 </footer>
 
 <script>
-
-function toggleDark(){
-  document.body.classList.toggle("dark");
-  localStorage.setItem("darkMode", document.body.classList.contains("dark"));
-}
-
-if(localStorage.getItem("darkMode") === "true"){
-  document.body.classList.add("dark");
-}
-
 const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(entries => {
@@ -220,10 +204,7 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-sections.forEach(section => {
-  observer.observe(section);
-});
-
+sections.forEach(section => observer.observe(section));
 </script>
 
 </body>
